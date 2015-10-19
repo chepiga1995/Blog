@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/chepiga1995/Blog/issues"
   },
-  "homepage": "https://github.com/chepiga1995/Blog#readme"
+  "homepage": "https://github.com/chepiga1995/Blog#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
 }
