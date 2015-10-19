@@ -1,0 +1,23 @@
+{
+  "name": "blog",
+  "version": "0.0.1",
+  "description": "Simle blog application. Node.js server",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chepiga1995/Blog.git"
+  },
+  "keywords": [
+    "blog",
+    "nodejs",
+    "server",
+    "application",
+    "angularjs"
+  ],
+  "author": "Yura Chepiga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chepiga1995/Blog/issues"
+  },
+  "homepage": "https://github.com/chepiga1995/Blog#readme"
+}
