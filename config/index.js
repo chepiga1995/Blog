@@ -3,7 +3,7 @@ var nconf = require('nconf');
 
 nconf.argv()
     .env()
-    .file({ file: __dirname + '/config.json' });
+    .file({ file: __dirname + '/package.json' });
 
 
 

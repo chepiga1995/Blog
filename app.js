@@ -2,10 +2,13 @@ var express = require('express');
 var app = express();
 var config = require('./config');
 
+app.set('env', config.get("NODE_ENV"));
+
 app.get('/', function(req, res, next){
     res.end('Hello World!!');
 });
 
-var server = app.listen(8080, 'localhost', function(){
-    console.log("Server starts at http://localhost:8080");
+var server = app.listen(config.get('port'), config.get('host'), function(){
+    console.log("Server starts at http://" + config.get('host') + ":"
+        + config.get('port') + " in " + app.get('env') + " mode.");
 });
