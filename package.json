@@ -22,6 +22,7 @@
   "homepage": "https://github.com/chepiga1995/Blog#readme",
   "dependencies": {
     "express": "^4.13.3",
+    "morgan": "^1.6.1",
     "nconf": "^0.8.2"
   }
 }

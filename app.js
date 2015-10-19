@@ -2,8 +2,13 @@ var express = require('express');
 var app = express();
 var config = require('./config');
 
-app.set('env', config.get("NODE_ENV"));
 
+app.set('env', config.get("NODE_ENV"));
+app.use(require('morgan')('dev', {
+    skip: function(){
+        return app.get('env') != 'development';
+    }
+}));
 app.get('/', function(req, res, next){
     res.end('Hello World!!');
 });
