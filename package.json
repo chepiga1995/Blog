@@ -23,6 +23,7 @@
   "dependencies": {
     "express": "^4.13.3",
     "morgan": "^1.6.1",
-    "nconf": "^0.8.2"
+    "nconf": "^0.8.2",
+    "swig": "^1.4.2"
   }
 }

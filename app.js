@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
 var config = require('./config');
+var swig = require('swig');
 
 app.set('env', config.get("NODE_ENV"));
 app.use(require('morgan')('dev', {
@@ -8,10 +9,14 @@ app.use(require('morgan')('dev', {
         return app.get('env') != 'development';
     }
 }));
+app.engine('html', swig.renderFile);
+
+app.set('view engine', 'html');
+app.set('views', __dirname + '/templates');
 app.use(express.static('public'));
 
 app.get('/', function(req, res, next){
-    res.end('Hello World!!');
+    res.render('index');
 });
 
 var server = app.listen(config.get('port'), config.get('host'), function(){
