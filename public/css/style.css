@@ -1,0 +1,48 @@
+body {
+  background-color: #fff; }
+
+header {
+  background-color: #292929;
+  padding-top: 1px;
+  height: 115px;
+  border-bottom: solid #1E1E1E 5px; }
+
+footer {
+  background-color: #F8F8F8;
+  height: 290px;
+  border-top: solid #EEEEEE 2px; }
+
+#main {
+  height: 700px; }
+  #main .inner {
+    border-left: solid #E2E2E2 1px;
+    border-right: solid #E2E2E2 1px;
+    box-shadow: -1px 0 0 0 #F8F8F8; }
+
+.logo {
+  font-size: 38px;
+  padding-top: 5px;
+  padding-left: 5px;
+  float: left; }
+
+.sign_up {
+  float: right;
+  font-size: 22px;
+  padding-top: 18px;
+  padding-right: 16px; }
+
+.sign_up:hover {
+  color: #58C939;
+  cursor: pointer; }
+
+.header_text {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white; }
+
+.green {
+  color: #58C939; }
+
+.inner {
+  width: 884px;
+  margin: 0 auto;
+  height: 100%; }
